@@ -45,4 +45,17 @@ public class CustomListTest {
         list.addCity(mockCity);
         assertTrue(list.hasCity(mockCity));
     }
+
+    /**
+     * Add a city to the CustomList and then delete to see if it exists in the {@link ArrayList} anymore
+     */
+    @Test
+    public void deleteCityTest() {
+        list = new CustomList(null, new ArrayList<City>());
+        City mockCity = new City("Vancouver", "BC");
+        list.addCity(mockCity);
+        assertTrue(list.hasCity(mockCity));
+        list.deleteCity(mockCity);
+        assertTrue(list.isEmpty());
+    }
 }

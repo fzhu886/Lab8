@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomList extends ArrayAdapter<City> {
 
@@ -73,5 +74,14 @@ public class CustomList extends ArrayAdapter<City> {
             return true;
         }
         return false;
+    }
+
+    /**
+     * This method removes a given City object from the CityList
+     * @param city A City object
+     * @throws IllegalArgumentException when the {@link List} doesn't contain the city
+     */
+    public void deleteCity(City city) {
+        //TODO: Removes a given City object from the CityList
     }
 }
