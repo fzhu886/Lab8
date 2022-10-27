@@ -26,30 +26,30 @@ public class CustomListTest {
      * check if our current size matches the initial size plus
      one
      */
-    @Test
+    /**@Test
     public void addCityTest(){
         list = new CustomList(null, new ArrayList<City>());
         int listSize = list.getCount();
         list.addCity(new City("Estevan", "SK"));
         assertEquals(list.getCount(), listSize+1);
-    }
+    }*/
 
 
     /**
      * Add a city to the CustomList and then check if it exists in the {@link ArrayList}
      */
-    @Test
+    /**@Test
     public void hasCityTest() {
         list = new CustomList(null, new ArrayList<City>());
         City mockCity = new City("Saskatoon", "SK");
         list.addCity(mockCity);
         assertTrue(list.hasCity(mockCity));
-    }
+    }*/
 
     /**
      * Add a city to the CustomList and then delete to see if it exists in the {@link ArrayList} anymore
      */
-    @Test
+    /**@Test
     public void deleteCityTest() {
         list = new CustomList(null, new ArrayList<City>());
         City mockCity = new City("Vancouver", "BC");
@@ -57,5 +57,19 @@ public class CustomListTest {
         assertTrue(list.hasCity(mockCity));
         list.deleteCity(mockCity);
         assertEquals(0, list.getCount());
+    }*/
+
+
+    /**
+     * Add a city object to the CustomList and check if the size of the list changes
+     */
+    @Test
+    public void countCitiesTest() {
+        list = new CustomList(null, new ArrayList<City>());
+        assertEquals(0, list.getCount());
+        City mockCity = new City("Missisauga", "ON");
+        list.addCity(mockCity);
+        assertEquals(1, list.getCount());
+        //list.getCount();
     }
 }
