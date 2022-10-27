@@ -35,6 +35,9 @@ public class CustomListTest {
     }
 
 
+    /**
+     * Add a city to the CustomList and then check if it exists in the {@link ArrayList}
+     */
     @Test
     public void hasCityTest() {
         list = new CustomList(null, new ArrayList<City>());
