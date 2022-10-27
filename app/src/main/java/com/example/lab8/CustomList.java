@@ -70,6 +70,6 @@ public class CustomList extends ArrayAdapter<City> {
      */
     public boolean hasCity(City city) {
         //TODO: Check if the city is included in the ArrayList {@link ArrayList}
-        //return false;
+        return false;
     }
 }
