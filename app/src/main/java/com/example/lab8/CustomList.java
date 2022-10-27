@@ -47,7 +47,7 @@ public class CustomList extends ArrayAdapter<City> {
 
     /**
      * this gets size of the list
-     * @return
+     * @return cities.size() {@link Integer}
      */
     public int getCount() {
 
@@ -60,7 +60,16 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city
      */
     public void addCity(City city) {
-        // cities.add(city);
+         cities.add(city);
     }
 
+    /**
+     *  Check if the city is included in the ArrayList cities {@link ArrayList}
+     * @param city
+     * @return {@link Boolean}
+     */
+    public boolean hasCity(City city) {
+        //TODO: Check if the city is included in the ArrayList {@link ArrayList}
+        //return false;
+    }
 }
