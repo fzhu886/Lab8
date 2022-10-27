@@ -56,6 +56,6 @@ public class CustomListTest {
         list.addCity(mockCity);
         assertTrue(list.hasCity(mockCity));
         list.deleteCity(mockCity);
-        assertTrue(list.isEmpty());
+        assertEquals(0, list.getCount());
     }
 }

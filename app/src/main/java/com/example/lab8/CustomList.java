@@ -82,6 +82,9 @@ public class CustomList extends ArrayAdapter<City> {
      * @throws IllegalArgumentException when the {@link List} doesn't contain the city
      */
     public void deleteCity(City city) {
-        //TODO: Removes a given City object from the CityList
+        if (!cities.contains(city)) {
+            throw new IllegalArgumentException();
+        }
+        cities.remove(city);
     }
 }
